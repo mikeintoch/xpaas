@@ -27,7 +27,7 @@
         <repository>
           <id>fusesource.m2</id>
           <name>FuseSource Community Release Repository</name>
-          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+          <url>http://nexus.cloudapps.example.com/content/repositories/fuse-releases/</url>
           <snapshots>
             <enabled>false</enabled>
           </snapshots>
