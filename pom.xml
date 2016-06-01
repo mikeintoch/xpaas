@@ -52,21 +52,6 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-  
-        <repositories>
-        <repository>
-          <id>fusesource.m2</id>
-          <name>FuseSource Community Release Repository</name>
-          <url>http://nexus.cloudapps.example.com/content/repositories/fusesource.m2/</url>
-          <snapshots>
-            <enabled>false</enabled>
-          </snapshots>
-          <releases>
-            <enabled>true</enabled>
-            <updatePolicy>never</updatePolicy>
-          </releases>
-        </repository>
-        </repositories>
 
   <dependencies>
 
