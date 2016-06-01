@@ -23,11 +23,43 @@
   <profiles>
     <profile>
       <id>fusesource.repo</id>
+      <mirrors>
+    <mirror>
+             <id>nexus-public</id>
+             <name>Nexus Public Repository</name>
+             <url>http://nexus.cloudapps.example.com/content/groups/public/</url>
+             <mirrorOf>*</mirrorOf>
+          </mirror>
+     </mirrors>
       <repositories>
         <repository>
-          <id>redhat-ga</id>
+          <id>fusesource.m2</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+        </repository>
+        <repository>
+          <id>fusesource.ea</id>
+          <name>FuseSource Community Early Access Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/ea</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+        </repository>
+        <repository>
+          <id>redhat.ga</id>
           <name>Red Hat General Availability Repository</name>
-          <url>http://nexus.cloudapps.example.com/content/groups/public/</url>
+          <url>https://maven.repository.redhat.com/ga</url>
           <snapshots>
             <enabled>false</enabled>
           </snapshots>
@@ -39,9 +71,33 @@
       </repositories>
       <pluginRepositories>
         <pluginRepository>
+          <id>fusesource.m2</id>
+          <name>FuseSource Community Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+        </pluginRepository>
+        <pluginRepository>
+          <id>fusesource.ea</id>
+          <name>FuseSource Community Early Access Release Repository</name>
+          <url>https://repo.fusesource.com/nexus/content/groups/ea</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+        </pluginRepository>
+        <pluginRepository>
           <id>redhat.ga</id>
           <name>Red Hat General Availability Repository</name>
-          <url>http://nexus.cloudapps.example.com/content/groups/public/</url>
+          <url>https://maven.repository.redhat.com/ga</url>
           <snapshots>
             <enabled>false</enabled>
           </snapshots>
