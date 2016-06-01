@@ -27,7 +27,7 @@
     <mirror>
              <id>nexus-public</id>
              <name>Nexus Public Repository</name>
-             <url>http://nexus.cloudapps.example.com/content/groups/public/</url>
+             <url>http://nexus.cloudapps.example.com/content/groups/public</url>
              <mirrorOf>*</mirrorOf>
           </mirror>
      </mirrors>
